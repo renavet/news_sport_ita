@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headlines</title>
+</head>
+<body>
+    <h1>Headlines</h1>
+    <ul>
+        {% for index in range(headlines|length) %}
+            <li><a href="{{ links[index] }}">{{ headlines[index] }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
